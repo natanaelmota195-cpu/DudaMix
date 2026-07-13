@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DUDA MIX - Sorveteria Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+      <div class="spinner"></div>
+      <p>Carregando delícias...</p>
+    </div>
+
+    <div class="cursor" id="cursor"></div>
+
+    <header class="navbar" id="navbar">
+      <div class="nav-inner container">
+        <a class="brand" href="#hero">
+          <span class="brand-yellow">DUDA</span>
+          <span class="brand-pink">MIX</span>
+        </a>
+        <nav class="nav-links">
+          <a href="#hero">Início</a>
+          <a href="#menu">Cardápio</a>
+          <a href="#promo">Promoções</a>
+          <a href="#about">Sobre</a>
+          <a href="#gallery">Galeria</a>
+          <a href="#contact">Contato</a>
+        </nav>
+        <a class="cta-nav" href="#contact">Peça Já</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-bg">
+          <!-- Vídeo do Hero: coloque seu arquivo em video/hero.mp4 (compressão recomendada 3-6MB) -->
+          <video class="hero-video" preload="metadata" autoplay muted loop playsinline poster="video/hero-poster.jpg" aria-hidden="true">
+            <source src="kling_20260707_VIDEO_Crie_um_v__988_0.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+
+          <div class="hero-video-overlay" aria-hidden="true"></div>
+
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="blur-shape blur-1"></div>
+          <div class="blur-shape blur-2"></div>
+          <div class="sparkle sparkle-1"></div>
+          <div class="sparkle sparkle-2"></div>
+          <div class="drip drip-1"></div>
+          <div class="drip drip-2"></div>
+        </div>
+
+        <div class="hero-grid container">
+          <div class="hero-copy reveal-left" id="heroCopy">
+            <span class="eyebrow">Premium & Artesanal</span>
+            <h1>Os melhores sorvetes da cidade.</h1>
+            <p>
+              Sabores artesanais preparados com ingredientes selecionados para transformar cada momento em uma experiência inesquecível.
+            </p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="#menu">🍦 Conheça o Cardápio</a>
+              <a class="btn btn-secondary" href="#contact">📍 Fazer Pedido</a>
+            </div>
+            <div class="hero-trust">
+              <span>Entrega rápida</span>
+              <span>Sabores exclusivos</span>
+              <span>Atendimento VIP</span>
+            </div>
+          </div>
+
+          <div class="hero-media reveal-right" aria-hidden="true">
+            <!-- Espaço intencionalmente limpo: o vídeo é o foco do lado direito -->
+            <div class="hero-tag">Sorvete Premium</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu section" id="menu">
+        <div class="section-head reveal-up">
+          <p>🍦 Cardápio</p>
+          <h2>Sabores que encantam a cada garfada</h2>
+        </div>
+        <div class="category-pill-row reveal-up">
+          <span>🍦 Sorvetes</span>
+          <span>🥤 Milk-shakes</span>
+          <span>🍓 Taças</span>
+          <span>🍨 Sundaes</span>
+          <span>🍫 Sobremesas</span>
+          <span>🥭 Açaí</span>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card reveal-scale">
+            <img src="https://images.unsplash.com/photo-1542068829-1115f7259450?auto=format&fit=crop&w=800&q=80" alt="Sorvete de morango" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Morango Royale</h3>
+              <p>Creme de morango fresco com pedaços suculentos e cobertura brilhante.</p>
+              <div class="menu-meta">
+                <span>R$ 28,90</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+          <article class="menu-card reveal-scale">
+            <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=800&q=80" alt="Milk-shake" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Pink Velvet Shake</h3>
+              <p>Milk-shake cremoso com calda de framboesa e finalização gourmand.</p>
+              <div class="menu-meta">
+                <span>R$ 24,50</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+          <article class="menu-card reveal-scale">
+            <img src="https://images.unsplash.com/photo-1559628233-b180be0be94b?auto=format&fit=crop&w=800&q=80" alt="Taça de açaí" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Açaí Tropical</h3>
+              <p>Açaí cremoso com banana, granola crocante e frutas frescas.</p>
+              <div class="menu-meta">
+                <span>R$ 26,00</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+          <article class="menu-card reveal-scale">
+            <img src="https://images.unsplash.com/photo-1611389755596-4f312d581066?auto=format&fit=crop&w=800&q=80" alt="Sundae" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Sundae Duda</h3>
+              <p>Sundae especial com calda quente, chantilly e finalização crocante.</p>
+              <div class="menu-meta">
+                <span>R$ 31,90</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="featured section" id="destaques">
+        <div class="section-head reveal-up">
+          <p>Destaques</p>
+          <h2>Sabores em destaque</h2>
+        </div>
+        <div id="react-root" class="react-grid"></div>
+      </section>
+
+      <section class="promo section" id="promo">
+        <div class="promo-card reveal-up">
+          <div class="promo-copy">
+            <span>Promoções</span>
+            <h2>Promoções imperdíveis toda semana!</h2>
+            <p>Ganhe descontos exclusivos e devolva o sabor a cada encontro.</p>
+            <div class="countdown" id="countdown">
+              <div><strong id="days">00</strong> Dias</div>
+              <div><strong id="hours">00</strong> Horas</div>
+              <div><strong id="minutes">00</strong> Min</div>
+              <div><strong id="seconds">00</strong> Seg</div>
+            </div>
+            <a class="btn btn-primary pulse" href="#contact">Veja Promoções</a>
+          </div>
+          <div class="promo-visual"></div>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="section-head reveal-up">
+          <p>Galeria</p>
+          <h2>Momentos doces em cada clique</h2>
+        </div>
+        <div class="gallery-grid">
+          <img data-src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=80" alt="Galeria sorvete 1" class="gallery-item reveal-up" loading="lazy" />
+          <img data-src="https://images.unsplash.com/photo-1545593190-332aa4202bdd?auto=format&fit=crop&w=700&q=80" alt="Galeria sorvete 2" class="gallery-item reveal-up" loading="lazy" />
+          <img data-src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Galeria sorvete 3" class="gallery-item reveal-up" loading="lazy" />
+          <img data-src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f240?auto=format&fit=crop&w=700&q=80" alt="Galeria sorvete 4" class="gallery-item reveal-up" loading="lazy" />
+          <img data-src="https://images.unsplash.com/photo-1485795044860-bafc19a1c9c7?auto=format&fit=crop&w=700&q=80" alt="Galeria sorvete 5" class="gallery-item reveal-up" loading="lazy" />
+          <img data-src="https://images.unsplash.com/photo-1598514982285-7dd233bcecfb?auto=format&fit=crop&w=700&q=80" alt="Galeria sorvete 6" class="gallery-item reveal-up" loading="lazy" />
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about-grid container">
+          <div class="about-media reveal-left">
+            <div class="about-image"></div>
+          </div>
+          <div class="about-copy reveal-right">
+            <span>Sobre a empresa</span>
+            <h2>Uma experiência artesanal feita para apaixonados por sobremesa</h2>
+            <p>
+              A DUDA MIX nasceu para elevar o universo das sobremesas com ingredientes
+              selecionados, produção totalmente artesanal e muita paixão em cada
+              detalhe.
+            </p>
+            <div class="about-icons">
+              <div class="about-item">
+                <span>✔</span>
+                <div>
+                  <h4>Ingredientes selecionados</h4>
+                  <p>Qualidade e frescor em cada receita.</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <span>✔</span>
+                <div>
+                  <h4>Produção artesanal</h4>
+                  <p>Feito à mão com cuidado e atenção.</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <span>✔</span>
+                <div>
+                  <h4>Atendimento de qualidade</h4>
+                  <p>Experiência acolhedora do início ao fim.</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <span>✔</span>
+                <div>
+                  <h4>Ambiente familiar</h4>
+                  <p>Momentos para compartilhar com quem ama.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section" id="reviews">
+        <div class="section-head reveal-up">
+          <p>Avaliações</p>
+          <h2>Clientes que adoram cada colherada</h2>
+        </div>
+        <div class="reviews-carousel reveal-up">
+          <article class="review-card floating">
+            <div class="review-top">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Cliente 1" />
+              <div>
+                <h4>Larissa Souza</h4>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p>O melhor sorvete da cidade, perfeito para momentos em família.</p>
+          </article>
+          <article class="review-card floating delay">
+            <div class="review-top">
+              <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80" alt="Cliente 2" />
+              <div>
+                <h4>Mateus Lima</h4>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p>Sabores incríveis e apresentação impecável. Recomendo demais!</p>
+          </article>
+          <article class="review-card floating">
+            <div class="review-top">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Cliente 3" />
+              <div>
+                <h4>Camila Pereira</h4>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p>Experiência premium, decoração linda e sorvetes deliciosos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="section-head reveal-up">
+          <p>Contato</p>
+          <h2>Fale conosco e peça sua sobremesa agora</h2>
+        </div>
+        <div class="contact-grid container">
+          <div class="contact-info reveal-left">
+            <div class="info-card glass-card">
+              <h3>Endereço</h3>
+              <p>Rua do Sorvete, 123 - Centro, São Paulo</p>
+            </div>
+            <div class="info-card glass-card">
+              <h3>Telefone</h3>
+              <p>(11) 98765-4321</p>
+            </div>
+            <div class="info-card glass-card">
+              <h3>WhatsApp</h3>
+              <p>+55 11 98765-4321</p>
+            </div>
+            <div class="info-card glass-card">
+              <h3>Instagram</h3>
+              <p>@dudamix_oficial</p>
+            </div>
+          </div>
+          <form class="contact-form reveal-right" id="contactForm" action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <input type="email" name="email" placeholder="Seu e-mail" required />
+            <input type="tel" name="phone" placeholder="Seu telefone" required />
+            <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+            <button class="btn btn-primary" type="submit">Enviar Mensagem</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner container">
+        <div>
+          <a class="brand" href="#hero">
+            <span class="brand-yellow">DUDA</span>
+            <span class="brand-pink">MIX</span>
+          </a>
+          <p>© 2026 DUDA MIX. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#menu">Cardápio</a>
+          <a href="#promo">Promoções</a>
+          <a href="#contact">Contato</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+      <img class="lightbox-img" src="" alt="Foto ampliada" />
+    </div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="script.js"></script>
+  
+  </body>
+</html>
