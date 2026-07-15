@@ -63,7 +63,7 @@
         <div class="hero-grid container">
           <div class="hero-copy reveal-left" id="heroCopy">
             <span class="eyebrow">Premium & Artesanal</span>
-            <h1>Os melhores sorvetes da cidade.</h1>
+            <h1>Onde o sabor vira felicidade.</h1>
             <p>
               Sabores artesanais preparados com ingredientes selecionados para transformar cada momento em uma experiência inesquecível.
             </p>
@@ -71,16 +71,11 @@
               <a class="btn btn-primary" href="#menu">🍦 Conheça o Cardápio</a>
               <a class="btn btn-secondary" href="#contact">📍 Fazer Pedido</a>
             </div>
-            <div class="hero-trust">
-              <span>Entrega rápida</span>
-              <span>Sabores exclusivos</span>
-              <span>Atendimento VIP</span>
-            </div>
+           
           </div>
 
           <div class="hero-media reveal-right" aria-hidden="true">
             <!-- Espaço intencionalmente limpo: o vídeo é o foco do lado direito -->
-            <div class="hero-tag">Sorvete Premium</div>
           </div>
         </div>
       </section>
@@ -91,59 +86,173 @@
           <h2>Sabores que encantam a cada garfada</h2>
         </div>
         <div class="category-pill-row reveal-up">
-          <span>🍦 Sorvetes</span>
-          <span>🥤 Milk-shakes</span>
-          <span>🍓 Taças</span>
-          <span>🍨 Sundaes</span>
-          <span>🍫 Sobremesas</span>
-          <span>🥭 Açaí</span>
+          <a class="btn btn-secondary btn-sm category-btn active" data-category="all" href="#menu" aria-pressed="true">Todos</a>
+          <a class="btn btn-secondary btn-sm category-btn" data-category="sorvetes" href="#menu" aria-pressed="false">🍦 Sorvetes</a>
+          <a class="btn btn-secondary btn-sm category-btn" data-category="milkshakes" href="#menu" aria-pressed="false">🥤 Milk-shakes</a>
+          <a class="btn btn-secondary btn-sm category-btn" data-category="tacas" href="#menu" aria-pressed="false">🍓 Taças</a>
+          <a class="btn btn-secondary btn-sm category-btn" data-category="sundaes" href="#menu" aria-pressed="false">🍨 Sundaes</a>
+          <a class="btn btn-secondary btn-sm category-btn" data-category="sobremesas" href="#menu" aria-pressed="false">🍫 Sobremesas</a>
+          <a class="btn btn-secondary btn-sm category-btn" data-category="acai" href="#menu" aria-pressed="false">🥭 Açaí</a>
         </div>
+        
         <div class="menu-grid">
-          <article class="menu-card reveal-scale">
-            <img src="https://images.unsplash.com/photo-1542068829-1115f7259450?auto=format&fit=crop&w=800&q=80" alt="Sorvete de morango" loading="lazy" />
+          <article class="menu-card reveal-scale" data-category="sorvetes">
+            <img src="img/img.sorvete%20morango.jpg" alt="Sorvete de Morango" loading="lazy" />
             <div class="menu-card-body">
-              <h3>Morango Royale</h3>
-              <p>Creme de morango fresco com pedaços suculentos e cobertura brilhante.</p>
+              <h3>Sorvete de Morango</h3>
+              <p>Creme de morango com pedaços de fruta fresca.</p>
               <div class="menu-meta">
                 <span>R$ 28,90</span>
                 <a class="btn btn-sm" href="#contact">Pedir Agora</a>
               </div>
             </div>
           </article>
-          <article class="menu-card reveal-scale">
-            <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=800&q=80" alt="Milk-shake" loading="lazy" />
+
+          <article class="menu-card reveal-scale" data-category="sorvetes">
+            <img src="img/img.sorvete%20choco.png" alt="Sorvete de Chocolate" loading="lazy" />
             <div class="menu-card-body">
-              <h3>Pink Velvet Shake</h3>
-              <p>Milk-shake cremoso com calda de framboesa e finalização gourmand.</p>
+              <h3>Sorvete de Chocolate</h3>
+              <p>Chocolate intenso, cremoso e encorpado.</p>
+              <div class="menu-meta">
+                <span>R$ 29,90</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal-scale" data-category="sorvetes">
+            <img src="img/img.sorvete%20pistache.jpg" alt="Sorvete de Pistache" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Pistache</h3>
+              <p>Sabor delicado com pedaços de pistache torrado.</p>
+              <div class="menu-meta">
+                <span>R$ 32,00</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal-scale" data-category="sorvetes">
+            <img src="img/img.napolitano.png" alt="Napolitano" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Napolitano</h3>
+              <p>Trio clássico: chocolate, baunilha e morango.</p>
+              <div class="menu-meta">
+                <span>R$ 30,50</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal-scale" data-category="milkshakes">
+            <img src="img/img.milkshake%20choco.png" alt="Milkshake Chocolate" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Milkshake Chocolate</h3>
+              <p>Delicioso milkshake com calda de chocolate e chantilly.</p>
               <div class="menu-meta">
                 <span>R$ 24,50</span>
                 <a class="btn btn-sm" href="#contact">Pedir Agora</a>
               </div>
             </div>
           </article>
-          <article class="menu-card reveal-scale">
-            <img src="https://images.unsplash.com/photo-1559628233-b180be0be94b?auto=format&fit=crop&w=800&q=80" alt="Taça de açaí" loading="lazy" />
+
+          <article class="menu-card reveal-scale" data-category="milkshakes">
+            <img src="img/img.milkshake%20caramelo.jpg" alt="Milkshake Caramelo" loading="lazy" />
             <div class="menu-card-body">
-              <h3>Açaí Tropical</h3>
-              <p>Açaí cremoso com banana, granola crocante e frutas frescas.</p>
+              <h3>Milkshake Caramelo</h3>
+              <p>Caramelo cremoso com toque salgado para balancear.</p>
+              <div class="menu-meta">
+                <span>R$ 25,00</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal-scale" data-category="milkshakes">
+            <img src="img/img.milkshake%20oreo.jpg" alt="Milkshake Oreo" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Milkshake Oreo</h3>
+              <p>Clássico com pedaços crocantes de biscoito.</p>
               <div class="menu-meta">
                 <span>R$ 26,00</span>
                 <a class="btn btn-sm" href="#contact">Pedir Agora</a>
               </div>
             </div>
           </article>
-          <article class="menu-card reveal-scale">
-            <img src="https://images.unsplash.com/photo-1611389755596-4f312d581066?auto=format&fit=crop&w=800&q=80" alt="Sundae" loading="lazy" />
+
+          <article class="menu-card reveal-scale" data-category="tacas">
+            <img src="img/img.taça%20baunilha.jpg" alt="Taça Baunilha" loading="lazy" />
             <div class="menu-card-body">
-              <h3>Sundae Duda</h3>
-              <p>Sundae especial com calda quente, chantilly e finalização crocante.</p>
+              <h3>Taça Baunilha</h3>
+              <p>Taça servida com calda e granulados crocantes.</p>
+              <div class="menu-meta">
+                <span>R$ 27,50</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal-scale" data-category="tacas">
+            <img src="img/img.taça%20morango.jpg" alt="Taça Morango" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Taça Morango</h3>
+              <p>Camadas de sorvete e calda de morango.</p>
+              <div class="menu-meta">
+                <span>R$ 28,00</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal-scale" data-category="sundaes">
+            <img src="img/img.sundae%20choco.jpg" alt="Sundae Chocolate" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Sundae Chocolate</h3>
+              <p>Sundae servido com calda quente e pedaços crocantes.</p>
               <div class="menu-meta">
                 <span>R$ 31,90</span>
                 <a class="btn btn-sm" href="#contact">Pedir Agora</a>
               </div>
             </div>
           </article>
+
+          <article class="menu-card reveal-scale" data-category="sundaes">
+            <img src="img/img.sundae%20morango.jpg" alt="Sundae Morango" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Sundae Morango</h3>
+              <p>Mix de morango fresco com chantilly e calda.</p>
+              <div class="menu-meta">
+                <span>R$ 31,90</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal-scale" data-category="sundaes">
+            <img src="img/img.sundae%20maracuja.jpg" alt="Sundae Maracujá" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Sundae Maracujá</h3>
+              <p>Acidez tropical que contrasta com o doce do sorvete.</p>
+              <div class="menu-meta">
+                <span>R$ 32,50</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal-scale" data-category="acai">
+            <img src="img/img.açai.jpg" alt="Açaí" loading="lazy" />
+            <div class="menu-card-body">
+              <h3>Açaí Tradicional</h3>
+              <p>Açaí cremoso com bananas, granola e mel.</p>
+              <div class="menu-meta">
+                <span>R$ 26,00</span>
+                <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+              </div>
+            </div>
+          </article>
         </div>
+        <p class="menu-empty" hidden>Nenhum item encontrado nesta categoria.</p>
       </section>
 
       <section class="featured section" id="destaques">
@@ -151,7 +260,35 @@
           <p>Destaques</p>
           <h2>Sabores em destaque</h2>
         </div>
-        <div id="react-root" class="react-grid"></div>
+        <div class="react-grid">
+          <article class="featured-card reveal-right">
+            <img src="img/img.sundae%20choco.jpg" alt="Sundae de Chocolate" loading="lazy" />
+            <div class="featured-info">
+              <span>Mais vendido</span>
+              <h3>Sundae Chocolate</h3>
+              <p>Sorvete cremoso com calda de chocolate quente e pedaços crocantes.</p>
+              <div class="featured-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            </div>
+          </article>
+          <article class="featured-card reveal-right">
+            <img src="img/img.sundae%20morango.jpg" alt="Sundae de Morango" loading="lazy" />
+            <div class="featured-info">
+              <span>Favorito da casa</span>
+              <h3>Sundae Morango</h3>
+              <p>Mix de morango fresco, chantilly e uma deliciosa calda de morango.</p>
+              <div class="featured-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            </div>
+          </article>
+          <article class="featured-card reveal-right">
+            <img src="img/img.açai.jpg" alt="Açaí Tradicional" loading="lazy" />
+            <div class="featured-info">
+              <span>Escolha refrescante</span>
+              <h3>Açaí Tradicional</h3>
+              <p>Açaí cremoso servido com banana, granola e mel para completar.</p>
+              <div class="featured-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="promo section" id="promo">
@@ -329,8 +466,6 @@
       <img class="lightbox-img" src="" alt="Foto ampliada" />
     </div>
 
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="script.js"></script>
   
   </body>
