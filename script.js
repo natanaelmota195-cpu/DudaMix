@@ -8,6 +8,9 @@ const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.querySelector('.lightbox-img');
 const countdown = document.getElementById('countdown');
 const contactForm = document.getElementById('contactForm');
+const categoryButtons = document.querySelectorAll('.category-btn');
+const menuCards = document.querySelectorAll('.menu-card[data-category]');
+const menuEmpty = document.querySelector('.menu-empty');
 
 window.addEventListener('load', () => {
   setTimeout(() => {
@@ -113,6 +116,28 @@ contactForm?.addEventListener('submit', (event) => {
     });
 });
 
+categoryButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    event.preventDefault();
+    const category = button.dataset.category;
+    let visibleCards = 0;
+
+    categoryButtons.forEach((item) => {
+      const isActive = item === button;
+      item.classList.toggle('active', isActive);
+      item.setAttribute('aria-pressed', String(isActive));
+    });
+
+    menuCards.forEach((card) => {
+      const isVisible = category === 'all' || card.dataset.category === category;
+      card.classList.toggle('is-hidden', !isVisible);
+      if (isVisible) visibleCards += 1;
+    });
+
+    menuEmpty.hidden = visibleCards > 0;
+  });
+});
+
 const menuHighlights = [
   {
     image: 'https://images.unsplash.com/photo-1505253210343-53f24944249b?auto=format&fit=crop&w=900&q=80',
@@ -131,7 +156,9 @@ const menuHighlights = [
 ];
 
 function renderFeaturedCards() {
-  const root = ReactDOM.createRoot(document.getElementById('react-root'));
+  const featuredRoot = document.getElementById('react-root');
+  if (!featuredRoot || typeof ReactDOM === 'undefined') return;
+  const root = ReactDOM.createRoot(featuredRoot);
   const Featured = () => {
     return React.createElement(
       'div',
